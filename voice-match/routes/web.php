@@ -1,5 +1,6 @@
 <?php
-
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,10 +12,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::resource('top','VoicematchController',['only' => ['show','index']]);
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
