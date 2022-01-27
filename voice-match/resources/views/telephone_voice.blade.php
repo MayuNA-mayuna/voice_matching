@@ -16,5 +16,5 @@
 <body>
     <p>クリックしてね！</p>
 </body>
-<script src="{{ asset('/telephone_voice.js') }}"></script>
+<script src="{{ asset('/js/telephone_voice.js') }}"></script>
 </html>
