@@ -15,7 +15,15 @@ use Illuminate\Support\Facades\Auth;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::resource('top','VoicematchController',['only' => ['show','index']]);
+
+
+Route::resource('/top','VoicematchController',['only' => ['show','index']])->name('top','top');
+// Route::get('top','VoicematchController@index')->name('top');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/analyze', 'VoicematchController@analyze')->name('analyze');
+
+Route::get('/explain', 'VoicematchController@explain')->name('explain');

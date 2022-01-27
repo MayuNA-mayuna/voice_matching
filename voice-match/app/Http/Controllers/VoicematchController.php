@@ -81,4 +81,12 @@ class VoicematchController extends Controller
     {
         //
     }
+
+    public function analyze(){
+        return view('analyze');
+    }
+
+    public function explain(){
+        return view('explain');
+    }
 }
