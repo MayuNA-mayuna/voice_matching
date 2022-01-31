@@ -36,10 +36,10 @@
   </div>
   <form class="d-block p-2" action="">
 　　 <p>マッチング相手</p>
-      <select name="ご用件">
-        <option value="">マッチング相手</option>
-        <option value="ご質問・お問い合わせ">ご質問・お問い合わせ</option>
-        <option value="リンクについて">リンクについて</option>
+      <select name="">
+      @foreach($items as $item)
+        <option value="">{{$item->name}}</option>
+      @endforeach
       </select>
       <p>最大周波数</p>
       <input type="text" value="">

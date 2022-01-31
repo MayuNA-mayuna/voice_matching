@@ -15,6 +15,9 @@ class CreateMatchesTable extends Migration
     {
         Schema::create('matches', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('match_members');
+            $table->integer('max_f_difference');
+            $table->integer('max_average_f_difference');
             $table->timestamps();
         });
     }

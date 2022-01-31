@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $items = User::all();
+
+//controllerからviewへの変数の受け渡し
+//view('blade.phpの前についてる名前', 使いたい配列)
+        return view('home',compact('items'));
     }
 }
