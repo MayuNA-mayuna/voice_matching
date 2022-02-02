@@ -12,7 +12,7 @@
     <p>{{$item->voicedata}}</p>
 @endforeach
 <p>音声データは20秒以上でお願いします。</p>
-    <form action="/home" enctype="multipart/form-data" method="post">
+    <form action="/upload" enctype="multipart/form-data" method="post">
        @csrf　　  　　 　
          <input type="file" name="voicedata">
          <input type="submit" value="アップロードする">

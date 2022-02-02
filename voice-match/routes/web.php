@@ -35,7 +35,7 @@ Route::get('/match/{id}', 'VoicematchController@match')->name('match');
 
 Route::get('/upload', 'VoicematchController@upload')->name('upload');
 
-Route::post('/upload', 'VoicematchController@store')->name('upload');
+Route::post('/upload', 'VoicematchController@store')->name('uploaded');
 
 Route::patch('/analyze/{id}', 'VoicematchController@update')->name('id');
 

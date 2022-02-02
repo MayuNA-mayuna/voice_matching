@@ -112,8 +112,6 @@ class VoicematchController extends Controller
     }
 
 
-
-
     //画像のアップロード
     public function store(Request $request)
     {
@@ -133,6 +131,7 @@ class VoicematchController extends Controller
         $voicedata->save();
     }
 
+    
     public function update(Request $request,$id)
     {
     $voice = User::findOrFail($id);
