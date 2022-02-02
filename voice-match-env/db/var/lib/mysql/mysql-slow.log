@@ -28,3 +28,24 @@ Time                 Id Command    Argument
 /usr/sbin/mysqld, Version: 8.0.28 (MySQL Community Server - GPL). started with:
 Tcp port: 3306  Unix socket: /var/run/mysqld/mysqld.sock
 Time                 Id Command    Argument
+/usr/sbin/mysqld, Version: 8.0.28 (MySQL Community Server - GPL). started with:
+Tcp port: 3306  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+/usr/sbin/mysqld, Version: 8.0.28 (MySQL Community Server - GPL). started with:
+Tcp port: 3306  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+# Time: 2022-02-02T06:11:59.816982-00:00
+# User@Host: laravel[laravel] @  [172.24.0.3]  Id:    45
+# Query_time: 1.191574  Lock_time: 0.000421 Rows_sent: 0  Rows_examined: 0
+use laravel;
+SET timestamp=1643782318;
+drop table if exists `password_resets`;
+/usr/sbin/mysqld, Version: 8.0.28 (MySQL Community Server - GPL). started with:
+Tcp port: 3306  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+# Time: 2022-02-02T12:23:42.403535-00:00
+# User@Host: laravel[laravel] @  [172.26.0.3]  Id:    91
+# Query_time: 1.463725  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+use laravel;
+SET timestamp=1643804620;
+# administrator command: Prepare;
