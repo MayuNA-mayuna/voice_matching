@@ -25,5 +25,18 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/analyze', 'VoicematchController@analyze')->name('analyze');
+Route::get('/analyze2', 'VoicematchController@analyze2')->name('analyze2');
 
 Route::get('/explain', 'VoicematchController@explain')->name('explain');
+
+Route::get('/explain2', 'VoicematchController@explain2')->name('explain2');
+
+Route::get('/match/{id}', 'VoicematchController@match')->name('match');
+
+Route::get('/upload', 'VoicematchController@upload')->name('upload');
+
+Route::post('/upload', 'VoicematchController@store')->name('upload');
+
+Route::patch('/analyze/{id}', 'VoicematchController@update')->name('id');
+
+Route::patch('/analyze2/{id}', 'VoicematchController@update2')->name('match_id');
