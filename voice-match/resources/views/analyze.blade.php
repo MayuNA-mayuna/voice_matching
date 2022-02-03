@@ -117,7 +117,7 @@ function drawWaveform() {
     // min_array.push(min_val);
 
     // 1分ほどで止まる仕組み→３にする
-    if (timeCount > 1000000) {
+    if (timeCount > 400000) {
 
         noLoop();
         sound.stop();
